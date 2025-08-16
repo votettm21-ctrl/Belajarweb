@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Ihya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(to right, #ff9966, #ff5e62);
+      color: white;
+      text-align: center;
+    }
+    header { padding: 50px 20px; }
+    h1 { animation: fadeInDown 1s ease-out; }
+    p { animation: fadeInUp 1.2s ease-out; }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 400px;
+      animation: zoomIn 1s ease-out;
+    }
+    a { color: yellow; text-decoration: none; }
+    footer { padding: 20px; font-size: 14px; opacity: 0.8; }
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes zoomIn {
+      from {opacity: 0; transform: scale(0.9);}
+      to {opacity: 1; transform: scale(1);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>✨ Selamat Datang di Website Ihya ✨</h1>
+    <p>Website ini dibuat sendiri dan diupload ke GitHub Pages 🚀</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Tentang Aku</h2>
+      <p>Hai, aku Ihya. Ini adalah website pertama aku yang online gratis!</p>
+    </section>
+
+    <section class="card">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:ihya@example.com">ihya@example.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ihya. Dibuat dengan ❤️ dan kopi.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      alert("Selamat datang di website Ihya!");
+    });
+  </script>
+</body>
+</html>
